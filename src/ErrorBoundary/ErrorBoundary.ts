@@ -58,8 +58,8 @@ export class ErrorBoundary extends Component<
         error,
         {
           scope: this.props.scope,
+          source: "source"
         },
-        'source'
       );
     }
   }

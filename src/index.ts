@@ -6,8 +6,6 @@ export { WithRumComponentContext, RumComponentContextProvider, useRumError, useR
 
 declare global {
   interface Window {
-    DD_RUM?: RumPublicApi & {
-      startView?(name?: string): void;
-    };
+    DD_RUM?: RumPublicApi;
   }
 }

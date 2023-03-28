@@ -1,5 +1,5 @@
 {
-  "name": "@datadog/rum-react-integration",
+  "name": "@nordcloud/rum-react-integration",
   "version": "1.0.0-alpha",
   "private": "true",
   "license": "Apache-2.0",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DataDog/rum-react-integration.git"
+    "url": "https://github.com/nordcloud/rum-react-integration.git"
   },
   "peerDependencies": {
     "@datadog/browser-rum-core": "^2.15.1",

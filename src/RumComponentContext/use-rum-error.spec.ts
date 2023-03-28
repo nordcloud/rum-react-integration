@@ -1,5 +1,4 @@
 import { renderHook, act } from "@testing-library/react-hooks";
-import * as React from "react";
 
 import { useRumError } from "./use-rum-error";
 

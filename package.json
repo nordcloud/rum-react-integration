@@ -11,7 +11,7 @@
     "build:cjs": "rm -rf cjs && tsc -p tsconfig.cjs.json",
     "build:esm": "rm -rf esm && tsc -p tsconfig.esm.json",
     "format": "prettier --check .",
-    "lint": "scripts/cli lint .",
+    "lint": "eslint .",
     "check:types": "tsc --pretty --skipLibCheck --noEmit",
     "test": "jest"
   },

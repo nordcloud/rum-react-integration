@@ -1,4 +1,4 @@
-# RUM React Integration
+# RUM React Integration - forked from [DataDog repository](https://github.com/DataDog/rum-react-integration-examples)
 
 ## Overview
 

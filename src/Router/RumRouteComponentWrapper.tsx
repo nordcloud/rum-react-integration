@@ -56,6 +56,7 @@ export const withRum = (component: RumRouteComponentType) =>
         }
 
         const manualTracking = !!globalObj.DD_RUM?.getInitConfiguration()
+        // @ts-expect-error types inside datadog library are not updated
           ?.trackViewsManually;
         if (!manualTracking) {
           console.warn(

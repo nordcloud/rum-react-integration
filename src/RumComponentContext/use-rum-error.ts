@@ -24,13 +24,13 @@ export const useRumError = () => {
             {
                 ...componentContext.customAttributes,
                 ...customAttributes,
+                source,
                 react: {
                     breadcrumbs: componentContext.componentBreadCrumbs,
                     component: componentContext.component,
                     ...(customAttributes as any)?.react
-                }
-            },
-            source
+                },
+            }
         );
     };
 };

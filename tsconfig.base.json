@@ -15,11 +15,5 @@
       "jest"
     ],
     "lib": ["ES2016", "DOM"],
-
-    "plugins": [
-      {
-        "name": "typescript-tslint-plugin"
-      }
-    ]
   }
 }

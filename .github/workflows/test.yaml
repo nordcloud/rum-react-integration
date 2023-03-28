@@ -1,0 +1,22 @@
+# Copyright 2023 Nordcloud Oy or its affiliates. All Rights Reserved.
+
+name: Tests
+on:
+  pull_request:
+    branches: [master]
+jobs:
+  build:
+    name: Run static checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+            node-version: "16"
+
+      - run: yarn
+      - run: yarn check:types
+      - run: yarn lint
+      - run: yarn test --silent
+      - run: yarn build

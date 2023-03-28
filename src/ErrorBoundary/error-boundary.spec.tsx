@@ -22,6 +22,8 @@ describe('ErrorBoundary', () => {
     onErrorSpy = jest.fn();
     addErrorSpy = jest.fn();
 
+    jest.spyOn(console, 'error').mockImplementation(() => {});
+
     global.window.onerror = onErrorSpy;
     rumAgent = {
       addError: addErrorSpy,
